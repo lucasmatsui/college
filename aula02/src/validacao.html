@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.css" />
+	<title>Validando Formulários com Javascript</title>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<form name="formSignUp" onsubmit="return validar()" method="post">
+		<h1>Trocar senha</h1>
+		<div id="name_error"></div>
+		<input name="nome"  type="text" placeholder="Nome"/><br /><br />
+		<input name="email"  type="email" placeholder="E-mail" /><br /><br />
+		<input name="senha"  type="password" placeholder="Senha" /><br /><br />
+		<input name="rep_senha"  type="password" placeholder="Confirmar senha" /><br /><br />
+		<input type="submit" />
+	</form>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
